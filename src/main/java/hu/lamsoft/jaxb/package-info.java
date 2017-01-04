@@ -1,0 +1,1 @@
+package hu.lamsoft.jaxb;
