@@ -81,9 +81,9 @@
 				</executions>
 				<configuration>
 					<sources>
-						<source>src/main/java/hu/unideb/inf/bd/model/Book.java</source>
-						<source>src/main/java/hu/unideb/inf/bd/model/SearchResultItem.java</source>
-						<source>src/main/java/hu/unideb/inf/bd/model/SearchResults.java</source>
+						<source>src/main/java/hu/lamsoft/pet/adoption/model/Pet.java</source>
+						<source>src/main/java/hu/lamsoft/pet/adoption/model/SearchResultItem.java</source>
+						<source>src/main/java/hu/lamsoft/pet/adoption/model/SearchResults.java</source>
 					</sources>
 				</configuration>
 			</plugin>
