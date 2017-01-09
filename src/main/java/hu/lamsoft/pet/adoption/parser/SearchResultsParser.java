@@ -19,6 +19,7 @@ import hu.lamsoft.pet.adoption.model.SearchResultItem;
 import hu.lamsoft.pet.adoption.model.SearchResults;
 import hu.lamsoft.pet.adoption.model.enums.Gender;
 import hu.lamsoft.pet.adoption.model.enums.Size;
+import hu.lamsoft.pet.adoption.parser.helper.StringEnum;
 import hu.lamsoft.pet.adoption.parser.util.Age;
 import hu.lamsoft.pet.adoption.parser.util.PagingSeparator;
 
@@ -69,7 +70,7 @@ public class SearchResultsParser extends BaseParser<SearchResults> {
 		String pictureUrl = getPictureUrl(pictureCell);
 		String[] dataRow = getDataRow(dataCell);
 		Long detailsLinkId = Long.valueOf(dataRow[0]);
-		String name = dataRow[1];
+		String name = StringEnum.findByStringValue(dataRow[1]);
 		String breed = dataRow[2];
 		Gender gender = Gender.findByStringValue(dataRow[3]);
 		Size size = Size.findByStringValue(dataRow[4]);

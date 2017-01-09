@@ -33,7 +33,7 @@ public class ParserHelper<T> {
 	}
 	
 	public String getAsString(T field) {
-		return petFieldToStringMap.get(field);
+		return StringEnum.findByStringValue(petFieldToStringMap.get(field));
 	}
 	
 	public Boolean getAsBoolean(T field) {

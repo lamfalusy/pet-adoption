@@ -33,7 +33,7 @@ public class Pet {
 	@XmlAttribute(required = true)
 	private PetType type;
 	
-	@XmlElement(required = true)
+	@XmlElement(required = false)
 	private String name;
 	
 	@XmlElement(required = true)

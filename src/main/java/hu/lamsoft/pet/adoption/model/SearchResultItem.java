@@ -25,7 +25,7 @@ public class SearchResultItem {
 	@XmlAttribute(required = true)
 	private Long detailsLinkId;
 	
-	@XmlElement(required = true)
+	@XmlElement(required = false)
 	private String name;
 	
 	@XmlElement(required = true)
